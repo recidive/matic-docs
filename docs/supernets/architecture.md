@@ -103,4 +103,4 @@ easily interact with the client, providing an enjoyable UX.
 The gRPC layer helps abstract all the request/reply protocols and simplifies the streaming
 protocols needed for the client to function. Protocol buffers are used to define services
 and message structures. It is covered in depth in the
-[Module documents](../edge/architecture/modules/networking.md).
+[Module documents](/edge/architecture/modules/networking.md).
