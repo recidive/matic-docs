@@ -25,7 +25,10 @@ queries or suggestions.
 ## Overview
 
 PolyBFT is the consensus mechanism of Polygon Edge. It is composed of two
-core parts, a consensus engine and a consensus protocol.
+core parts, a consensus engine and a consensus protocol. It uses the
+[IBFT 2.0 protocol](https://github.com/0xPolygon/go-ibft) as a consensus engine
+to seal blocks, and [system smart contracts](https://github.com/0xPolygon/core-contracts)
+to implement a staking solution for the protocol.
 
 <!-- TO ADD PROPER DIAGRAM -->
 
@@ -40,7 +43,7 @@ core parts, a consensus engine and a consensus protocol.
                             |                              |
                             |                              |
               +--------------------------+    +--------------------------+
-              |          IBFT            |    |          Core            |
+              |        IBFT 2.0          |    |          Core            |
               |        Consensus         |    |          Smart           |
               |         Engine           |    |         Contracts        |
               +--------------------------+    +--------------------------+
@@ -65,7 +68,7 @@ sequential instances of a block finalization protocol, where the objective of th
 to decide which Ethereum block is to be added at height `h` of the blockchain. In PolyBFT, the height
 is referred to as the *sequence*.
 
-## Consensus Engine: IBFT
+## Consensus Engine: IBFT 2.0
 
 Specifically, Polygon Edge uses [IBFT 2.0](https://github.com/0xPolygon/go-ibft) as a consensus
 engine to seal blocks.

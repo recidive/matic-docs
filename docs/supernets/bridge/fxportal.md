@@ -1,6 +1,6 @@
 ---
 id: fxportal
-title: FXPortal
+title: Overview
 description: "Learn about the FXPortal bridge for Polygn <> Ethereum"
 keywords:
   - docs

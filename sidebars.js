@@ -1490,18 +1490,12 @@ module.exports = {
     "supernets/polybft",
     {
       type: "category",
-      label: "Core contracts",
+      label: "Modules",
       link: {
         type: "generated-index",
       },
       items: [
-        "supernets/contracts/validator-set",
-        "supernets/contracts/state-sender",
-        "supernets/contracts/checkpoint-manager",
-        "supernets/contracts/reward-pool",
-        "supernets/contracts/validator-queue",
-        //"edge/contracts/validator-storage",
-        //"edge/contracts/withdrawal-queue",
+        "supernets/modules/consensus",
       ],
     },
     {
@@ -1514,6 +1508,22 @@ module.exports = {
         "supernets/bridge/fxportal",
         "supernets/bridge/statesync",
         "supernets/bridge/checkpoint",
+      ],
+    },
+    {
+      type: "category",
+      label: "Core contracts",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "supernets/contracts/validator-set",
+        "supernets/contracts/state-sender",
+        "supernets/contracts/checkpoint-manager",
+        "supernets/contracts/reward-pool",
+        "supernets/contracts/validator-queue",
+        //"edge/contracts/validator-storage",
+        //"edge/contracts/withdrawal-queue",
       ],
     },
     {
