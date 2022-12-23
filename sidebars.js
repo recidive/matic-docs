@@ -1198,8 +1198,8 @@ module.exports = {
             "edge/consensus/pos-stake-unstake",
             "edge/consensus/migration-to-pos",
             "edge/consensus/bls",
-          ],
-        },
+            ],
+          },
         {
           type: "category",
           label: "Block production",
