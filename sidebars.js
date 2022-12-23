@@ -1487,6 +1487,7 @@ module.exports = {
   supernets: [
     "supernets/overview",
     "supernets/architecture",
+    "supernets/polybft",
     {
       type: "category",
       label: "Core contracts",
@@ -1494,6 +1495,13 @@ module.exports = {
         type: "generated-index",
       },
       items: [
+        "edge/contracts/validator-set",
+        "edge/contracts/state-sender",
+        "edge/contracts/checkpoint-manager",
+        "edge/contracts/reward-pool",
+        "edge/contracts/validator-queue",
+        //"edge/contracts/validator-storage",
+        //"edge/contracts/withdrawal-queue",
       ],
     },
     {
@@ -1503,6 +1511,8 @@ module.exports = {
         type: "generated-index",
       },
       items: [
+        "supernets/fxportal/statesync",
+        "supernets/fxportal/checkpoint",
       ],
     },
     {
