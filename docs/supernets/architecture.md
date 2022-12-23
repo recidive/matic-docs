@@ -93,7 +93,7 @@ in the system, as transactions can be added from multiple entry points.
 ## JSON RPC
 
 The JSON RPC layer is an API layer that dApp developers use to interact with the blockchain.
-It is covered in depth in the [Module documents](../edge/architecture/modules/json-rpc.md).
+It is covered in depth in the [Module documents](/edge/architecture/modules/json-rpc.md).
 
 ## gRPC
 
