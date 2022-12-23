@@ -14,7 +14,7 @@ keywords:
 ## Overview
 
 The `StateSender` contract is a simple smart contract that sends messages
-to child. Messages are indexed by validators from root and then signed.
+to a child. Messages are indexed by validators from root and then signed.
 Once they have enough signatures, they can be committed on `StateReceiver`
 on child.
 

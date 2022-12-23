@@ -27,7 +27,7 @@ queries or suggestions.
 
 The following diagram offers an architectural overview for Polygon Supernets.
 
-![Polygon Edge Architecture](/img/supernets/architecture.png)
+![Polygon Supernets Architecture](/img/supernets/architecture.png)
 
 ## libp2p
 
@@ -47,14 +47,21 @@ occur without mapping.
 Message passing between a `rootchain` to a given `sidechain` is
 accomplished by continuously syncing the state of the `rootchain` with the `sidechain`, known
 as `StateSync`. These transfers of state happen between system calls. The mechanics of `StateSync`
-are explained here.
+are explained [here](bridge/statesync.md).
 
 When passing messages from a `sidechain` to a `rootchain`, the validator set will commit
 `checkpoints`, a snapshot of the `sidechain` state. The mechanics of `checkpoints` are explained
-here.
+[here](bridge/checkpoint.md).
 
 ## SAM Pool
 
+The SAM Pool is a means that allows multiple validators to aggregate their signatures
+to create a single, aggregated signature that represents the signatures of all validators in
+the pool. It is implemented using a variant of the BLS signature scheme. Validators must join a
+SAM Pool and agree to follow a set of rules and procedures for generating and aggregating their
+signatures. Once a group of validators has joined a SAM Pool, they can use the SAM Pool feature
+to create aggregated signatures on messages or transactions, which can then be verified by the
+network using the SAM Pool's public key.
 
 ## Consensus
 
@@ -62,7 +69,7 @@ PolyBFT is the consensus mechanism of Polygon Edge. It is composed of two
 core parts, a consensus engine and a consensus protocol. PolyBFT uses an adaptation of
 PBFT (Practical Byzantine Fault Tolerance) consensus, known as IBFT (Istanbul Byzantine
 Fault Tolerance), in combination with the Tendermint-based re-locking mechanism. More is
-explained in the [PolyBFT overview].
+explained in the [PolyBFT overview](polybft.md).
 
 ## Blockchain
 
@@ -73,7 +80,10 @@ a new block is added to the chain. It is covered in depth in the corresponding
 
 ## Runtime (EVM)
 
-Supernets use the EVM as its runtime environment
+Supernets use the EVM as their runtime environment for executing smart contracts.
+The runtime environment is designed to be highly scalable and fast, with the ability
+to process transactions and execute smart contracts at speeds that are significantly
+faster than those of the Ethereum mainnet.
 
 ## TxPool
 

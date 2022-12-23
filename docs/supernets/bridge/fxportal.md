@@ -35,4 +35,10 @@ checkpoints. The checkpoints are submitted to the associated `rootchain` asset c
 > This can serve as a reference point for the blockchain, allowing validators to verify the integrity and accuracy of the
 > data on the network.
 
+The bridge can be in one of three states:
+
+- **Pending**: the events are waiting to bundle and be sent over.
+- **Committed**: the event data has been relayed over to the associated chain.
+- **Executed**: the event was committed and the state was executed resulting in a state change.
+
 FXPortal supports `ERC20`, `ERC721`, and other token standards.
