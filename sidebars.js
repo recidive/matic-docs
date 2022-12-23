@@ -1511,8 +1511,9 @@ module.exports = {
         type: "generated-index",
       },
       items: [
-        "supernets/fxportal/statesync",
-        "supernets/fxportal/checkpoint",
+        "supernets/bridge/fxportal",
+        "supernets/bridge/statesync",
+        "supernets/bridge/checkpoint",
       ],
     },
     {
