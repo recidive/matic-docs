@@ -1,0 +1,96 @@
+---
+id: architecture
+title: Architecture Overview
+sidebar_label: Architecture
+description: Introduction to the architecture of Polygon Supernets.
+keywords:
+  - docs
+  - polygon
+  - edge
+  - architecture
+  - modular
+  - layer
+  - libp2p
+  - extensible
+---
+
+:::caution
+
+All the client-based documentation is being revamped due to the new
+client updates to Polygon Edge and is subject to change. Please stay
+tuned!
+
+Please also feel free to raise an issue or pull request if you have any
+queries or suggestions.
+
+:::
+
+The following diagram offers an architectural overview for Polygon Supernets.
+
+![Polygon Edge Architecture](/img/supernets/architecture.png)
+
+## libp2p
+
+**[libp2p](https://libp2p.io/)** serves as the networking layer for Supernets.
+Libp2p fits with the designing philosophies of Supernets as it is designed for
+peer-to-peer network architectures while being modular, extensible, and fast. Most
+importantly, it provides a great foundation for more advanced features, which we'll
+cover later on.
+
+## Bridge
+
+With the help of PolyBFT, Polygon Edge supports an in-built bridging mechanism
+(a two-way bridge) known as **FxPortal**, which enables arbitrary message passing between
+a Supernet (`sidechain`) and another proof-of-stake blockchain (`rootchain`). Transfers can
+occur without mapping.
+
+Message passing between a `rootchain` to a given `sidechain` is
+accomplished by continuously syncing the state of the `rootchain` with the `sidechain`, known
+as `StateSync`. These transfers of state happen between system calls. The mechanics of `StateSync`
+are explained here.
+
+When passing messages from a `sidechain` to a `rootchain`, the validator set will commit
+`checkpoints`, a snapshot of the `sidechain` state. The mechanics of `checkpoints` are explained
+here.
+
+## SAM Pool
+
+
+## Consensus
+
+PolyBFT is the consensus mechanism of Polygon Edge. It is composed of two
+core parts, a consensus engine and a consensus protocol. PolyBFT uses an adaptation of
+PBFT (Practical Byzantine Fault Tolerance) consensus, known as IBFT (Istanbul Byzantine
+Fault Tolerance), in combination with the Tendermint-based re-locking mechanism. More is
+explained in the [PolyBFT overview].
+
+## Blockchain
+
+The Blockchain layer is the central layer that coordinates everything in the Polygon Edge
+system. The blockchain curates state transitions and is responsible for state changes when
+a new block is added to the chain. It is covered in depth in the corresponding
+[Module documents](../edge/architecture/modules/state.md).
+
+## Runtime (EVM)
+
+Supernets use the EVM as its runtime environment
+
+## TxPool
+
+The TxPool layer represents the transaction pool, and it is closely linked with other modules
+in the system, as transactions can be added from multiple entry points.
+
+## JSON RPC
+
+The JSON RPC layer is an API layer that dApp developers use to interact with the blockchain.
+It is covered in depth in the [Module documents](../edge/architecture/modules/json-rpc.md).
+
+## gRPC
+
+The gRPC layer is vital for operator interactions. Through it, node operators can
+easily interact with the client, providing an enjoyable UX.
+
+The gRPC layer helps abstract all the request/reply protocols and simplifies the streaming
+protocols needed for the client to function. Protocol buffers are used to define services
+and message structures. It is covered in depth in the
+[Module documents](../edge/architecture/modules/networking.md).

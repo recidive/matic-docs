@@ -46,7 +46,7 @@ export const firstRow = [
 export const secondRow = [
     {
         title: "PoS",
-        status: "PoS v3: Docs Coming Soon",
+        status: "PoS v1",
         linkUrl: "docs/pos/polygon-architecture",
         imageUrl: "img/home/blockchain-basics.svg",
         description: "A Layer-2 Proof of Stake scaling solution for Ethereum-based public blockchains."
@@ -60,11 +60,11 @@ export const secondRow = [
         description: "Build modular and extensible blockchain networks that are compatible with Ethereum."
     },
     {
-        title: "Supernets",
-        status: "Appchains: Docs Coming Soon",
-        linkUrl: "",
+        title: "[ALPHA] Supernets",
+        status: "Appchains: Edge v0.7.0",
+        linkUrl: "docs/supernets/overview",
         imageUrl: "img/supernet.svg",
-        description: "Application-specific blockchain networks that are interoperable, scalable and secure."
+        description: "Application-specific blockchain networks that are interoperable, scalable, and secure."
     },
     {
         title: "Avail",

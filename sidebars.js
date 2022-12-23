@@ -128,7 +128,7 @@ module.exports = {
               },
               items: ["develop/metamask/config-polygon-on-wallet-link"],
             },
-    
+
             {
               type: "category",
               label: "Venly",
@@ -1480,5 +1480,45 @@ module.exports = {
         "polygonid/contracts/overview"
       ]
     }
-  ]
+  ],
+
+  // #####################################################################
+
+  supernets: [
+    "supernets/overview",
+    "supernets/architecture",
+    {
+      type: "category",
+      label: "Core contracts",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+      ],
+    },
+    {
+      type: "category",
+      label: "FXPortal Bridge",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+      ],
+    },
+    {
+      type: "category",
+      label: "JSON RPC Commands",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "supernets/api/json-rpc-eth",
+        "supernets/api/json-rpc-net",
+        "supernets/api/json-rpc-web3",
+        "supernets/api/json-rpc-txpool",
+        "supernets/api/json-rpc-debug",
+      ],
+    },
+  ],
+
 };
