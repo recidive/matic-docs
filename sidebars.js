@@ -1039,6 +1039,19 @@ module.exports = {
             "zkEVM/zkProver/program-counter"
           ]
         },
+        {
+          type: "category",
+          label: "Storage SM",
+          link: {
+            type: "generated-index"
+          },
+          items:[
+            "zkEVM/zkProver/intro-storage-sm",
+            "zkEVM/zkProver/zkprover-storage-design",
+            "zkEVM/zkProver/simple-smt",
+            "zkEVM/zkProver/detailed-smt",
+          ]
+        },
       ]
     },
     "zkEVM/lx-ly-bridge",
