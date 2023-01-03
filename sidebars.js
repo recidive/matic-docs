@@ -1047,9 +1047,13 @@ module.exports = {
           },
           items:[
             "zkEVM/zkProver/intro-storage-sm",
-            "zkEVM/zkProver/zkprover-storage-design",
+            "zkEVM/zkProver/sparse-merkle-tree",
             "zkEVM/zkProver/simple-smt",
-            "zkEVM/zkProver/detailed-smt",
+            "zkEVM/zkProver/detailed-smt-concepts",
+            "zkEVM/zkProver/basic-smt-ops",
+            "zkEVM/zkProver/construct-key-path",
+            "zkEVM/zkProver/storage-sm-mechanism",
+            "zkEVM/zkProver/executor-pil",
           ]
         },
       ]

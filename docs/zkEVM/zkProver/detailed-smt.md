@@ -1,7 +1,7 @@
 ---
-id: detailed-smt
+id: detailed-smt-concepts
 title: More Concepts About SMTs
-sidebar_label: Detailed SMT Concepts
+sidebar_label: SMT Concepts
 description: A description of more concepts and challenges about the zkProver's SMTs
 keywords:
   - docs

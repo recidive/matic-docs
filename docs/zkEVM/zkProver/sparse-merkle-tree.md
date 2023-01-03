@@ -1,7 +1,7 @@
 ---
-id: zkprover-storage-design
-title: zkProver Storage Design
-sidebar_label: Storage Design
+id: sparse-merkle-tree
+title: Sparse Merkle Tree
+sidebar_label: Sparse Merkle Tree
 description: This document covers preliminary concepts needed to understand the way storage is designed for the zkProver.
 keywords:
   - docs
@@ -9,6 +9,8 @@ keywords:
   - polygon wiki
   - zkEVM
   - Polygon zkEVM
+  - merkle tree
+  - sparse
 image: https://wiki.polygon.technology/img/thumbnail/polygon-zkevm.png
 ---
 
@@ -20,8 +22,6 @@ The content of this document is rather elementary. Experienced developers can fa
 
 :::
 
-
-
 ## Merkle Trees
 
 A typical Merkle tree has **leaves**, **branches** and a **root**. A leaf is a node with no child-nodes, while a branch is a node with child-nodes. The root is therefore the node with no parent-node.
@@ -32,7 +32,7 @@ $$
 \text{V}_{\mathbf{a}}, \text{V}_{\mathbf{b}}, \text{V}_{\mathbf{c}}, \text{V}_{\mathbf{d}}, \text{V}_{\mathbf{e}}, \text{V}_{\mathbf{f}}, \text{V}_{\mathbf{g}}, \text{V}_{\mathbf{h}}
 $$
 
-![Figure 3: A Merkle Tree Example](figures/fig2-mkl-tree-gen.png)
+![A Merkle Tree Example](figures/fig2-mkl-tree-gen.png)
 
 Firstly, each leaf is nothing but the hash value $\mathbf{H}(\text{V}_{\mathbf{i}})$ of a particular value $\text{V}_{\mathbf{i}}$, where $\mathbf{i}$ is an element of the index-set $\{ \mathbf{a}, \mathbf{b}, \mathbf{c}, \mathbf{d}, \mathbf{e}, \mathbf{f}, \mathbf{g}, \mathbf{h} \}$.
 
