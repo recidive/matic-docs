@@ -36,7 +36,7 @@ A collision-resistant hash function is therefore the best tool for generating ke
 
 ## Constructing Navigation Paths
 
-A path refers to the edges traversed from the root to a leaf. Since the SMTs are binary, all edges can be thought of, as labeled with either a bit **0** or **1**. Edges to the left labeled with a bit **0**, while edges to the right are labeled with a bit **1**.
+A path refers to the edges traversed from the root to a leaf. Since the SMTs are binary, all edges can be thought of as labeled with either a bit **0** or **1**. Edges to the left are labeled with a bit **0**, while edges to the right are labeled with a bit **1**.
 
 Paths are therefore strings of bits, and are derived from keys in a very specific way.
 
