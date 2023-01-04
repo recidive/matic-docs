@@ -88,7 +88,7 @@ Next, one climbs the tree to level $6$, where $\text{path-bit}_5 = 0$. One then 
 
 Again, one climbs the tree to level $5$, where $\text{path-bit}_4 = 1$. Computing  $5 \text{ modulo } 4$  yields $1$. The $\text{path-bit}_4$ is thence appended to the first key part, $\text{RKey}_{\mathbf{0}}$.
 
-One then continues in the same fashion; 
+One then continues in the same fashion:
 
 $\text{Climbs the tree to level } 4. \text{ Computes }\ 4 \text{ modulo } 4 = 0. \text{ Appends path-bit to the fourth part, } \text{RKey}_{\mathbf{3}}.$
 $\text{Climbs the tree to level } 3. \text{ Computes }\ 3 \text{ modulo } 4 = 3. \text{ Appends path-bit to the third part, } \text{RKey}_{\mathbf{2}}.$$\text{Climbs the tree to level } 2. \text{ Computes }\ 2 \text{ modulo } 4 = 2. \text{ Appends path-bit to the second part, } \text{RKey}_{\mathbf{1}}.$
