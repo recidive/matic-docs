@@ -55,7 +55,7 @@ k_{\mathbf{0,0}\ } k_{\mathbf{1,0}\ } k_{\mathbf{2,0}\ } k_{\mathbf{3,0}\ } k_{\
   \dots k_{\mathbf{0,62}\ }  k_{\mathbf{1,62}\ } k_{\mathbf{2,62}\ }  k_{\mathbf{3,62}\ }  k_{\mathbf{0,63}\ } k_{\mathbf{1,63}\ } k_{\mathbf{2,63}\ } k_{\mathbf{3,63} }.
 $$
 
-That is, the Navigation Path to the leaf corresponding to $\text{Key}_{\mathbf{0123}}$ is the string of bits composed of;
+That is, the Navigation Path to the leaf corresponding to $\text{Key}_{\mathbf{0123}}$ is the string of bits composed of:
 
 - The least-significant bits of the four key parts, $\text{Key}_{\mathbf{0}} , \text{Key}_{\mathbf{1}} , \text{Key}_{\mathbf{2}} , \text{Key}_{\mathbf{3}}$, appearing in the order of the key parts as: $k_{\mathbf{0,0}\ } k_{\mathbf{1,0}\ } k_{\mathbf{2,0}\ } k_{\mathbf{3,0}}$.
 - Followed by the second least-significant bits of the four key parts, $\text{Key}_{\mathbf{0}} , \text{Key}_{\mathbf{1}} , \text{Key}_{\mathbf{2}} , \text{Key}_{\mathbf{3}}$, appearing in the order of the key parts as: $k_{\mathbf{0,1}\ } k_{\mathbf{1,1}\ } k_{\mathbf{2,1}\ } k_{\mathbf{3,1}}$. 
