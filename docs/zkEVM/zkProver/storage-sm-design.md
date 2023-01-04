@@ -178,7 +178,7 @@ Once consistency is established both between the keys and the old roots, then al
 
 ## Remaining Secondary Assembly Codes
 
-The Assembly codes for the other seven SMT Actions to a certain extent, follow a similar pattern except for a few cases where especially adjusted routines are used.
+The Assembly codes for the other seven SMT Actions to a certain extent follow a similar pattern except for a few cases where especially adjusted routines are used.
 
 Actions such as; 
 
