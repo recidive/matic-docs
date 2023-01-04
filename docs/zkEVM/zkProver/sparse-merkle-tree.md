@@ -47,7 +47,7 @@ $$
 \mathbf{B}_{\mathbf{efgh}} = \mathbf{H} \big( \mathbf{B}_{\mathbf{ef}}\| \mathbf{B}_{\mathbf{gh}}\big). \quad \text{ } \text{ } \text{ }
 $$
 
-Thirdly, the root is computed as, $\mathbf{root}_{\mathbf{a..h}} = \mathbf{H} \big(\mathbf{B}_{\mathbf{abcd}}\| \mathbf{B}_{\mathbf{efgh}} \big)$.
+Thirdly, the root is computed as $\mathbf{root}_{\mathbf{a..h}} = \mathbf{H} \big(\mathbf{B}_{\mathbf{abcd}}\| \mathbf{B}_{\mathbf{efgh}} \big)$.
 
 Leaves that share a parent-node are called **siblings**. The same terminology applies to branches. For example, $\mathbf{B}_{\mathbf{ab}}$ and $\mathbf{B}_{\mathbf{cd}}$ are sibling branches because they are branches of the same parent, $\mathbf{B}_{\mathbf{abcd}}$. Similarly, $\mathbf{B}_{\mathbf{efgh}}$ and $\mathbf{B}_{\mathbf{abcd}}$ are sibling branches.
 
@@ -63,7 +63,7 @@ In order to locate the key-value pair $( K_{\mathbf{d}} , V_{\mathbf{d}})$ in th
 
 -  a key-bit "$1$" means "**follow the edge going to the right**".
 
-Since $K_{\mathbf{d} } = 10010110$, as follows;
+Since $K_{\mathbf{d} } = 10010110$, as follows:
 
 1. Read the least-significant bit of $K_{\mathbf{d}}$, which is $0$, hence traverse the tree to the left, and reach $\mathbf{B_{abcd}}$.
 2. Then read the second significant key-bit, which is "$1$" in this case. So take the edge going to the right, reaching $\mathbf{B_{cd}}$.

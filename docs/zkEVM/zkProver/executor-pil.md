@@ -31,7 +31,7 @@ $$
 
 The Executor therefore uses an internal 4-element register called `op = [_,_,_,_]`, for handling values from the Storage ROM, which are needed in the internal step-by-step evaluations of the Storage Action being executed. It is thus reset to 0 after every evaluation.
 
-All the function calls seen in the Assembly code;
+All the function calls seen in the Assembly code:
 
 `GetSibling()`, `GetValueLow()`, `GetValueHigh()`, `GetRKey()`, `GetSiblingRKey()`, `GetSiblingHash()`, `GetSiblingValueLow()`, `GetSiblingValueHigh()`, `GetOldValueLow()`, `GetOldValueHigh()`, `GetLevelBit()`, `GetTopTree()`, `GetTopBranch()` and `GetNextKeyBit()`; 
 
@@ -83,7 +83,7 @@ The verifier takes the execution trace, and tests if it satisfies the polynomial
 
 ## The POSEIDON HASH
 
-Poseidon SM is the most straight forward once one understands the internal mechanism of the original Poseidon hash function. The hash function's permutation process translates readily to the Poseidon SM states. 
+Poseidon SM is more straightforward once one understands the internal mechanism of the original Poseidon hash function. The hash function's permutation process translates readily to the Poseidon SM states. 
 
 The POSEIDON State Machine carries out POSEIDON Actions in accordance with instructions from the Main SM Executor and requests from the Storage SM. That is, it computes hashes of messages sent from any of the two SMs, and also checks if the hashes were correctly computed.
 

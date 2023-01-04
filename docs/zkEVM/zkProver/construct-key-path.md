@@ -137,7 +137,7 @@ $$
 0 \mapsto (1,0,0,0),\ \ 1 \mapsto (0,1,0,0),\ \ 2 \mapsto (0,0,1,0)\  \text{ and }\ 3 \mapsto (0,0,0,1).
 $$
 
-Note that the four numbers $0$, $1$, $2$ and $3$ can be expressed in their **binary form** with just two bits, and the same one-to-one correspondence holds as;
+Note that the four numbers $0$, $1$, $2$ and $3$ can be expressed in their **binary form** with just two bits, and the same one-to-one correspondence holds as:
 
 $$
 \text{00} \mapsto (1,0,0,0),\ \ \text{01} \mapsto (0,1,0,0),\ \ \text{10} \mapsto (0,0,1,0)\  \text{ and }\ \text{11} \mapsto (0,0,0,1).
@@ -157,7 +157,7 @@ Therefore, `LEVEL` is cyclic under `ROTATE_LEVEL`, and is in fact algebraically 
 
 ### Using `LEVEL` Register in Key Reconstruction
 
-First note that, when navigating the tree, the leaf level can be indicated by one of the four possible states of the `LEVEL` register. And this works for all possible leaf levels because, for any positive integer $j$;
+First note that, when navigating the tree, the leaf level can be indicated by one of the four possible states of the `LEVEL` register. And this works for all possible leaf levels because, for any positive integer $j$:
 
 $$
 \begin{aligned}
@@ -168,7 +168,7 @@ $$
 \end{aligned}
 $$
 
-Second, the two least-significant bits of each of these number, when written in **binary**, are as follows; 
+Second, the two least-significant bits of each of these number, when written in **binary**, are as follows:
 
 $$
 \begin{aligned}
@@ -183,7 +183,7 @@ It suffices therefore to only read the two least-significant bits of the leaf le
 
 Third, the position of the bit **1** in the `LEVEL` register tallies precisely with the part of the remaining key, $\text{RKey}_{\mathbf{i}}$, to which the last used path-bit came from.
 
-So then, when reconstructing the key, one needs only check where the bit **1** is in the `LEVEL` register, because;
+So then, when reconstructing the key, one needs only to check where the bit **1** is in the `LEVEL` register, because:
 
 $$
 \begin{aligned}
