@@ -14,7 +14,7 @@ image: https://wiki.polygon.technology/img/thumbnail/polygon-zkevm.png
 
 Let us first look at the zkProver's **storage parameters**.
 
-In the Storage SM, the keys and values are strings of 256 bits. Keys will henceforth be represented as 256-bit unsigned integers, which are quadruples of 64-bit field elements. For example;
+In the Storage SM, the keys and values are strings of 256 bits. Keys will henceforth be represented as 256-bit unsigned integers, which are quadruples of 64-bit field elements. For example:
 
 $$
 \text{Key}_{\mathbf{0123}} = \big( \text{Key}_{\mathbf{0}} , \text{Key}_{\mathbf{1}} , \text{Key}_{\mathbf{2}} , \text{Key}_{\mathbf{3}} \big)
