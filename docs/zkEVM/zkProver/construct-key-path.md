@@ -100,7 +100,7 @@ The next climb is to the root. The navigation path-bits have been exhausted, and
 
 It is clear, from the above example, that there is a one-to-one correspondence between the integers **modulo 4** (i.e., elements of the group $\mathbb{Z}_4 = \{ 0, 1, 2, 3 \}$) and remaining key parts $\text{RKey}_{\mathbf{0}}$, $\text{RKey}_{\mathbf{1}}$, $\text{RKey}_{\mathbf{2}}$, $\text{RKey}_{\mathbf{3}}$.
 
-That is, there is a mapping;
+That is, there is a mapping:
 
 $$
 1 \mapsto \text{RKey}_{\mathbf{0}},\ \ 2 \mapsto \text{RKey}_{\mathbf{1}},\ \  3 \mapsto \text{RKey}_{\mathbf{2}} \text{ and }\ 0 \mapsto \text{RKey}_{\mathbf{3}}.
