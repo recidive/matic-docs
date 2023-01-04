@@ -180,7 +180,7 @@ Once consistency is established both between the keys and the old roots, then al
 
 The Assembly codes for the other seven SMT Actions to a certain extent follow a similar pattern except for a few cases where especially adjusted routines are used.
 
-Actions such as; 
+Actions such as:
 
 1. The `Set_InsertFound` (or `SIF`) may involve a change in the topology of the SMT by extending a branch once or several times. 
 
