@@ -365,61 +365,12 @@ curl localhost:1317/bor/span/1
 
 Bor will rely on this interface. So if you don’t see JSON output, there is something wrong!
 
-Now let’s download the `genesis` file for Bor specifically:
-
-```bash
-sudo curl -o /mnt/data/bor/genesis.json 'https://raw.githubusercontent.com/maticnetwork/bor/master/builder/files/genesis-mainnet-v1.json'
-```
-
-Let’s verify the `sha256 sum` again for this file:
-
-```
-# sha256sum genesis.json
-5c10eadfa9d098f7c1a15f8d58ae73d67e3f67cf7a7e65b2bd50ba77eeac67e1  genesis.json
-```
-
-Now we need to `init` the Bor home directory. This command is similar to what we did for Heimdall:
-
-```bash
-docker run -v /mnt/data/bor:/bor-home:rw -it  0xpolygon/bor:0.3.0 --datadir /bor-home init /bor-home/genesis.json
-```
-
-Most of the pieces of this command should look very familiar. Instead of `--home` we’re setting the `--datadir` flag to tell Bor where to preserve the data.
-
-For reference, you can see the details for the Bor image here: https://hub.docker.com/repository/docker/0xpolygon/bor
-
-After downloading the `genesis` file and running `init`, our Bor home directory should look something like this.
-
-```bash
-tree /mnt/data/bor/
-/mnt/data/bor/
-├── bor
-│   ├── LOCK
-│   ├── chaindata
-│   │   ├── 000001.log
-│   │   ├── CURRENT
-│   │   ├── LOCK
-│   │   ├── LOG
-│   │   └── MANIFEST-000000
-│   ├── lightchaindata
-│   │   ├── 000001.log
-│   │   ├── CURRENT
-│   │   ├── LOCK
-│   │   ├── LOG
-│   │   └── MANIFEST-000000
-│   └── nodekey
-├── genesis.json
-└── keystore
-
-4 directories, 13 files
-```
-
 At this point, we should be ready to start Bor. We’re going to use this command:
 
 ```bash
-docker run -p 30303:30303 -p 8545:8545 -v /mnt/data/bor:/bor-home:rw --net polygon --name bor -d --restart unless-stopped  0xpolygon/bor:0.3.0 --datadir /bor-home \
-  --port 30303 \
+docker run -p 30303:30303 -p 8545:8545 -v /mnt/data/bor:/bor-home:rw --net polygon --name bor -d --restart unless-stopped 0xpolygon/bor:0.3.2 server --datadir /bor-home \
   --bor.heimdall 'http://heimdallrest:1317' \
+  --port 30303 \
   --http --http.addr '0.0.0.0' \
   --http.vhosts '*' \
   --http.corsdomain '*' \
@@ -427,13 +378,10 @@ docker run -p 30303:30303 -p 8545:8545 -v /mnt/data/bor:/bor-home:rw --net polyg
   --ipcpath /bor-home/bor.ipc \
   --http.api 'eth,net,web3,txpool,bor' \
   --syncmode 'full' \
-  --bor-mainnet \
   --miner.gasprice '30000000000' \
   --miner.gaslimit '20000000' \
-  --miner.gastarget '20000000' \
   --txpool.nolocals \
   --txpool.accountslots 16 \
-  --txpool.globalslots 32768 \
   --txpool.accountqueue 16 \
   --txpool.globalqueue 32768 \
   --txpool.pricelimit '30000000000' \
