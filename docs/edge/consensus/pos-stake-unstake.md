@@ -17,7 +17,7 @@ keywords:
 This guide goes into detail on how to set up a Proof of Stake network with the Polygon Edge, how to stake funds for nodes
 to become validators and how to unstake funds.
 
-It **highly encouraged** to read and go through
+It is **highly encouraged** to read and go through
 the [Local Setup](/docs/edge/get-started/set-up-ibft-locally)
 / [Cloud Setup](/docs/edge/get-started/set-up-ibft-on-the-cloud) sections, before going along
 with this PoS guide. These sections outline the steps needed to start a Proof of Authority (PoA) cluster with the
@@ -113,7 +113,7 @@ address `0x0000000000000000000000000000000000001001`.
 Any kind of interaction with the staking mechanism is done through the Staking Smart Contract at the specified address.
 
 To learn more about the Staking Smart Contract, please visit
-the [Staking Smart Contract](/docs/edge/consensus/pos-concepts#contract-pre-deployment)
+the **[Staking Smart Contract](/docs/edge/consensus/pos-concepts#contract-pre-deployment)**
 section.
 :::
 

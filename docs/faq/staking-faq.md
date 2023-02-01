@@ -6,7 +6,7 @@ description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -38,7 +38,11 @@ Check if you have funds on the Main Ethereum Network, to delegate your tokens. A
 
 ### I am unable to view the Staking tab. How do I access Staking?
 
-Once logged into https://wallet.polygon.technology/ you need to  click on apps > staking. Users will be landed on the staking overview page. Reference for guide:
+You just need to access **https://staking.polygon.technology/**, where you will see the following landing page:
+
+<img src={useBaseUrl("img/staking_faq/staking-lp.png")} height="500px"/>
+
+Alternatively, once logged into the [Polygon Wallet Suite](https://wallet.polygon.technology/), you can click on **More Apps > Staking**. Users will be landed on the **Staking Overview** page. Reference for guide:
 
 <img src={useBaseUrl("img/staking_faq/staking-app.png")} height="500px"/>
 
@@ -128,7 +132,7 @@ Once the **unbonding period is complete**, the Claim Stake button will be enable
 Please watch the video for a graphical illustration of how this works:
 
 <video width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/staking_faq/ClaimingStake.mov"></source>
+  <source type="video/mp4" src="/img/staking_faq/claiming-stake.mov"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 

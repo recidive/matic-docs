@@ -1,14 +1,12 @@
 ---
-id: overview
-title: zkNode Overview
-sidebar_label: Overview
-description: Detailed overview of zkNode and its setup
+id: zknode-overview
+title: zkNode
+sidebar_label: zkNode
+description: Detailed overview of zkNode and its setup for Polygon zkEVM.
 keywords:
   - docs
   - zk rollups
   - polygon
-  - proof
-  - efficiency
   - hermez
   - zkEVM
   - zkNode

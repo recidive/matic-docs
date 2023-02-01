@@ -26,7 +26,7 @@ Steps in this guide involve waiting for the Heimdall and Bor services to sync fu
 
 Alternatively, you can use a maintained snapshot, reducing the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](/docs/develop/network-details/snapshot-instructions-heimdall-bor).
 
-For snapshot download links, see the [<ins>Polygon Chains Snapshots</ins>](https://snapshots.matic.today/) page.
+For snapshot download links, see the [<ins>Polygon Chains Snapshots</ins>](https://snapshot.polygon.technology/) page.
 
 :::
 
@@ -71,10 +71,10 @@ Length in byte format - 4
 
   ```bash
   # Mainnet:
-  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.0 heimdall_version=v0.3.0 network=mainnet node_type=sentry" --list-hosts
+  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.3 heimdall_version=v0.3.0 network=mainnet node_type=sentry" --list-hosts
 
   # Testnet:
-  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.2-beta heimdall_version=v0.3.0 network=mumbai node_type=sentry" --list-hosts
+  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.3 heimdall_version=v0.3.0 network=mumbai node_type=sentry" --list-hosts
   ```
 
   <img src={useBaseUrl("img/network/full-node-mumbai.png")} />
@@ -83,10 +83,10 @@ Length in byte format - 4
 
   ```bash
   # Mainnet:
-  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.0 heimdall_version=v0.3.0 network=mainnet node_type=sentry"
+  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.3 heimdall_version=v0.3.0 network=mainnet node_type=sentry"
 
   # Testnet:
-  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.2-beta heimdall_version=v0.3.0 network=mumbai node_type=sentry" 
+  ansible-playbook playbooks/network.yml --extra-var="bor_version=v0.3.3 heimdall_version=v0.3.0 network=mumbai node_type=sentry" 
   ```
 
 - In case you run into any issues, delete and clean the whole setup using:
